@@ -33,7 +33,7 @@ object SourceTest {
     stream2.print("stream2")
 
     //③ 从本地文件
-    val stream3: DataStream[String] = env.readTextFile("D:\\BigDataStudy\\workspase\\flink-learning\\src\\main\\resources\\wc.txt")
+    val stream3: DataStream[String] = env.readTextFile("D:\\BigDataStudy\\workspase\\flink-learning\\src\\main\\resources\\sensor.txt")
     stream3.print("stream3")
 
     //④ 从kafka
