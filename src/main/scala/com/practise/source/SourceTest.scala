@@ -2,10 +2,11 @@ package com.practise.source
 
 import java.util.Properties
 
+import com.practise.SensorReading
 import org.apache.flink.api.common.serialization.SimpleStringSchema
-import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
 import org.apache.flink.api.scala._
 import org.apache.flink.streaming.api.functions.source.{RichSourceFunction, SourceFunction}
+import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer011
 
 import scala.collection.immutable
@@ -55,8 +56,6 @@ object SourceTest {
   }
 }
 
-// 定义样例类，表示传感器：id，时间戳，温度
-case class SensorReading(id: String, timestamp: Long, temperature: Double)
 
 /**
   * 自定义数据源，需要继承RichSourceFunction

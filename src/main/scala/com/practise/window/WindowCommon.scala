@@ -1,9 +1,9 @@
 package com.practise.window
 
-import com.practise.source.SensorReading
+import com.practise.SensorReading
+import org.apache.flink.api.scala._
 import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironment}
 import org.apache.flink.streaming.api.windowing.time.Time
-import org.apache.flink.api.scala._
 
 object WindowCommon {
   def main(args: Array[String]): Unit = {

@@ -1,5 +1,6 @@
 package com.practise.transform
 
+import com.practise.SensorReading
 import com.practise.source.SensorReading
 import org.apache.flink.api.common.functions.{FilterFunction, RichFlatMapFunction}
 import org.apache.flink.configuration.Configuration
